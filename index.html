@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="shortcut icon" href="./image/logo/head-logo.ico">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -38,16 +40,52 @@
         </div>
     </div>
 </nav>
-<!--滚动图-->
-<div id="Rolling-graph">
+
+<div id="myCarousel" class="carousel slide " data-ride="carousel" >
     <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-            <img src="image/1280x400/1280-美食%20(1).jpg" class="img-responsive" alt=''>
+        <div class="col-md-8 col-md-offset-2">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="image/1280x400/1280-美食%20(1).jpg" class="img-responsive" alt="First slide">
+            <div class="carousel-caption">美食图1</div>
         </div>
-        <div class="col-md-2"></div>
+        <div class="item">
+            <img src="image/1280x400/1280-美食%20(2).jpg" class="img-responsive" alt="Second slide">
+            <div class="carousel-caption">美食图2</div>
+        </div>
+        <div class="item">
+            <img src="image/1280x400/1280-美食%20(3).jpg" class="img-responsive" alt="Third slide">
+            <div class="carousel-caption">美食图3</div>
+        </div>
+        <div class="item">
+            <img src="image/1280x400/1280-美食%20(4).jpg" class="img-responsive" alt="Third slide">
+            <div class="carousel-caption">美食图3</div>
+        </div>
+        <div class="item">
+            <img src="image/1280x400/1280-美食%20(5).jpg" class="img-responsive" alt="Third slide">
+            <div class="carousel-caption">美食图3</div>
+        </div>
+
     </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
+        </span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	</a>
+        </div>
+        </div>
 </div>
+
 <!--分类-->
 <div id="classify" class="container-fluid">
 
@@ -101,7 +139,7 @@
             <h4>每月推荐</h4>
             <HR>
             <div class="row">
-                <div class="col-sm-6 col-md-3">
+                <div class="col-md-6">
                     <div class="recommend">
                         <a href="#" class="recommend-a">
                             <img src="image/280x230/280-美食%20(2).jpg" class="img-responsive">
@@ -112,7 +150,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class=" col-md-6">
                     <div class="recommend">
                         <a href="#" class="recommend-a">
                         <img src="image/280x230/280-美食%20(4).jpg" class="img-responsive">
@@ -123,7 +161,7 @@
                     </a>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class=" col-md-6">
                     <div class="recommend">
                         <a href="#" class="recommend-a">
                         <img src="image/280x230/280-美食%20(6).jpg" class="img-responsive">
@@ -134,7 +172,7 @@
                     </a>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class=" col-md-6">
                     <div class="recommend">
                         <a href="#" class="recommend-a">
                         <img src="image/280x230/280-美食%20(8).jpg" class="img-responsive">
@@ -178,6 +216,7 @@
         </div>
     </div>
 </footer>
+
 <script src="js/jquery/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <!--<script src="js/jquery/jquery.nav.js"></script>-->
@@ -193,25 +232,12 @@
         });
         $('.navbar-collapse').click(function () {
             $('.navbar-collapse').collapse('hide');
-        })
-    })
+        });
+        $('#myCarousel').carousel();
+    });
+
+
 </script>
 
-<!--<script>-->
-
-    <!--$(document).ready(function () {-->
-
-        <!--$('.nav').onePageNav({-->
-            <!--currentClass: 'current',-->
-            <!--changeHash: false,-->
-            <!--scrollSpeed: 500,-->
-            <!--scrollThreshold: 0.5,-->
-            <!--filter: '',-->
-            <!--easing: 'swing',-->
-        <!--});-->
-
-    <!--});-->
-
-<!--</script>-->
 </body>
 </html>
