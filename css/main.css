@@ -1,12 +1,12 @@
 body {
     font-family: 'Microsoft Yahei', Sans-Serif;
-    background: rgb(242, 242, 242);
+    background: rgb(242, 242, 242) !important;
 }
 a:hover{
     text-decoration: none;
 }
 hr {
-    border-top:2px solid #cccccc;
+    border-top:2px solid #cccccc !important;
 }
 .navbar-default {
     background: #fff;
