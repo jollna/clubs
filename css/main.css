@@ -2,7 +2,9 @@ body {
     font-family: 'Microsoft Yahei', Sans-Serif;
     background: rgb(242, 242, 242);
 }
-
+a:hover{
+    text-decoration: none;
+}
 hr {
     border-top:2px solid #cccccc;
 }
@@ -33,8 +35,19 @@ hr {
     color: #666;
 }
 
-#Rolling-graph .img-responsive {
+#myCarousel .img-responsive {
     padding: 70px 0px 20px 0px;
+    /*min-height: 400px;*/
+}
+
+.carousel-control.right ,
+.carousel-control.left{
+    background-image: none;
+}
+
+.carousel-caption{
+    font-size: 20px;
+    font-weight: 600;
 }
 
 #classify ,
@@ -69,19 +82,26 @@ hr {
     font-size: 15px;
 }
 
-#recommend .col-md-3 {
+#recommend .col-md-6 {
     /*width: 280px;*/
     display: block;
     padding: 0px;
     text-align: center;
+    margin: 20px 0;
 }
 
 .recommend {
     background: #ffffff;
     margin: 0 5px;
-    padding: 5px;
+    padding: 10px 0 50px 0;
     box-shadow:0px 1px  1px 2px #eeeeee ;
     -moz-transition: all 300ms ease-out;
+}
+
+.recommend P,
+.recommend h3{
+    padding: 0 50px;
+    color: #111111;
 }
 
 .recommend img:hover{
@@ -91,6 +111,7 @@ hr {
 
 #recommend img{
     margin: 0 auto;
+    padding: 0 5px;
 }
 #recommend .col-md-8 .row{
 margin: 0px -5px 0px -5px;
@@ -114,9 +135,8 @@ margin: 0px -5px 0px -5px;
     font-size: 25px;
     color: #aaaaaa;
 }
-
 @media (min-width: 770px) {
-    .col-xs-4 :hover {
+    #classify .col-xs-4 :hover {
         background: rgb(78, 200, 255);
         text-decoration: none;
         color: #ffffff;
@@ -132,12 +152,20 @@ margin: 0px -5px 0px -5px;
     #about .col-md-8{
         margin: 0px 10px 0px 10px;
     }
-    #recommend .col-md-3{
-        margin: 0px 0px 60px 0px;
+    #recommend .col-md-6{
+        margin: 0px 0px 20px 0px;
     }
     #footer .end{
         font-size: 16px;
     }
+    #Rolling-graph img{
+        width: 100%;
+        height: 400px;
+    }
+    .recommend P,
+    .recommend h3{
+    padding: 0 10px;
+}
 }
 
 @media (max-width: 400px) {
@@ -149,4 +177,9 @@ margin: 0px -5px 0px -5px;
     .col-xs-4, .col-sm-2 {
         padding: 5px;
     }
+}
+
+
+#header{
+    min-height: 400px;
 }
